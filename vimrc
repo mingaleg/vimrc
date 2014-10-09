@@ -63,7 +63,7 @@ set autoindent " auto indent on next line
 
 " Spell checking {{{
 let spell_executable = "aspell"
-let spell_language_list = "polish,english"
+let spell_language_list = "russian,english"
 " let spell_markup_ft = "html,php,xhtml,dhtml,tex,mail,help,text"
 " let spell_auto_type = "tex,mail,text,html,sgml,otl,cvs,none"
 " }}}
@@ -244,9 +244,8 @@ nnoremap   <Leader>r   :NERDTreeFind<CR>
 
 " little spell helpers
 nnoremap   <Leader>ss   :set spell!<CR>
-nnoremap   <Leader>sp   :set spelllang=pl<CR>
+nnoremap   <Leader>ru   :set spelllang=ru<CR>
 nnoremap   <Leader>sn   :set spelllang=en<CR>
-nnoremap   <Leader>sf   :set spelllang=fr<CR>
 
 " buffer switching helpers
 "nnoremap <Leader>l :ls<CR> Better way LustyJuggler plugin
@@ -279,12 +278,12 @@ nnoremap     <C-Insert>     "+Y
 nnoremap     <S-Insert>     "+p
 
 
-map          <C-S-V>     <C-R>+
-map!         <C-S-V>     <C-R>+
-vnoremap     <C-S-C>     "+y
-vnoremap     <C-S-V>     "+p
-nnoremap     <C-S-C>     "+Y
-nnoremap     <C-S-V>     "+p
+" map          <C-S-V>     <C-R>+
+" #map!         <C-S-V>     <C-R>+
+" vnoremap     <C-S-C>     "+y
+" vnoremap     <C-S-V>     "+p
+" nnoremap     <C-S-C>     "+Y
+" nnoremap     <C-S-V>     "+p
 " simple silent SVN commit
 " funny version map   <F11>     :w<CR>:!svn commit -m "$(fortune)" %<CR>
 map   <F11>     :w<CR>:!svn commit -m "" %<CR>
@@ -393,7 +392,7 @@ map <Leader>ev :e $MYVIMRC<CR>
 
 
 filetype plugin indent on
-let g:snips_author = 'Jacek Wysocki'
+let g:snips_author = 'Oleg Mingalev'
 let g:gist_detect_filetype = 1
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
@@ -479,8 +478,8 @@ au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 iab docuement document
 iab Docuement Document
 iab xdate <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
-iab xme <C-R> Jacek Wysocki
-iab xME <C-R> Jacek Wysocki <jacek.wysocki@gmail.com>
+iab xme <C-R> Mingalev Oleg
+iab xME <C-R> Mingalev Oleg <oleg@mingalev.net>
 iab xmail <C-R> jacek.wysocki@gmail.com
 " }}}
 
